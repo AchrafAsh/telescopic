@@ -1,5 +1,6 @@
 import { NextPage } from "next";
 import { Layout } from "@/components";
+import { withAuth } from "@/utils/auth";
 
 const SchemaPage: NextPage = () => {
     return (
@@ -8,5 +9,7 @@ const SchemaPage: NextPage = () => {
         </Layout>
     );
 };
+
+export const getServerSideProps = withAuth();
 
 export default SchemaPage;

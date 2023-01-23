@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Layout } from "@/components";
+import { withAuth } from "@/utils/auth";
 
 export default function HomePage() {
     const [databaseUrl, setDatabaseUrl] = useState("");
@@ -91,3 +92,5 @@ export default function HomePage() {
         </Layout>
     );
 }
+
+export const getServerSideProps = withAuth();

@@ -19,7 +19,13 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <header className="py-4 px-6 flex justify-between items-center text-sm">
-                <div>⌘ / Achraf Ash / me3x</div>
+                <div className="flex items-center space-x-2">
+                    <span>⌘</span>
+                    <span className="text-gray-400 text-2xl font-thin">/</span>
+                    <span>Achraf Ash</span>
+                    <span className="text-gray-400 text-2xl font-thin">/</span>
+                    <span>me3x</span>
+                </div>
                 <nav className="flex space-x-3">
                     <a href="https://www.telescopic.dev/changelog">Changelog</a>
                     <a href="https://www.telescopic.dev/docs">Docs</a>
